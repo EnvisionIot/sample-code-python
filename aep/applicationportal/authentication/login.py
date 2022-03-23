@@ -33,3 +33,23 @@ def login(accessKey, secretKey, url):
         accessToken = None
     return accessToken
 
+def login_admin(accessKey, secretKey, url):
+    accessURL = url + "/app-portal-service/v2.2/login"
+    params = {}
+    req = PreparedRequest()
+    req.prepare_url(accessURL, params)
+    print(req.url)
+
+    body = {"account": "cat01.enos",
+            "password": "Cat@2020"
+            }
+    print(body)
+
+    response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body)
+    print(response)
+
+    try:
+        accessToken = response["data"]["accessToken"]
+    except:
+        accessToken = None
+    return accessToken

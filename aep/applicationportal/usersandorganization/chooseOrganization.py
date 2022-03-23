@@ -19,13 +19,19 @@ def chooseOrganization(accessKey, secretKey, orgId, url, accessToken):
     req.prepare_url(accessURL, params)
     print(req.url)
 
-    headers = {'Authorization': 'Bearer '+ accessToken}
+    headers = {"Authorization": "Bearer " + accessToken}
     print(headers)
 
-    body = {'orgId': orgId}
+    body = {"orgId": orgId}
     print(body)
 
-    response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body, headers=headers, method='POST')
+    response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body, headers=headers)
     print(response)
+
+    try:
+        refreshToken = response["data"]["refreshToken"]
+    except:
+        refreshToken = None
+    return refreshToken
 
 

@@ -12,24 +12,20 @@
 import poseidon.poseidon
 from requests.models import PreparedRequest
 
-def refreshAccessToken(accessKey, secretKey, url):
-    accessURL = url + "/app-portal-service/v2.0/login"
-    params = {"refreshToken": ""}
+def refreshAccessToken(accessKey, secretKey, url, refreshToken):
+    accessURL = url + "/app-portal-service/v2.2/token/refresh"
+    params = {"refreshToken": refreshToken}
     req = PreparedRequest()
     req.prepare_url(accessURL, params)
     print(req.url)
 
-    body={"account": "songxibin2013",
-          "password": "Password1"
-          }
-    print(body)
-
-    response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body)
+    response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url)
     print(response)
 
     try:
-        accessToken = response["data"]["accessToken"]
+        newAccessToken = response["data"]["accessToken"]
     except:
-        accessToken = None
-    return accessToken
+        newAccessToken = None
+    return newAccessToken
+
 

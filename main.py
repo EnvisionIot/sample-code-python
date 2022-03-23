@@ -1,5 +1,4 @@
 # This is a sample Python script.
-# update
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
@@ -20,11 +19,12 @@ import IoTHub.assetTree.assetTree.assetTreeApp
 import IoTHub.assetTree.assetTreeNode.assetTreeNodeApp
 import IoTHub.alert.alertApp
 import edp.streamprocessing.streamProcessingApp
-import edp.tsdbpolicy.tsdbPolicyApp
+import edp.tsdbPolicy.tsdbPolicyApp
 import edp.tsdbData.tsdbDataApp
 import edp.dataFederation.dataFederationApp
 import edp.batchProcessing.batchProcessingApp
 import aep.applicationportal.applicationPortalApp
+import aep.businessprocessmanagement.businessProcessManagementApp
 
 
 load_dotenv()
@@ -113,7 +113,12 @@ if __name__ == '__main__':
 
     # Application Portal Service
     # https://support.envisioniot.com/docs/app-portal-api/en/2.3.0/overview.html
-    aep.applicationportal.applicationPortalApp.applicationPortalGeneral(accessKey, secretKey, orgId, url)
+    # aep.applicationportal.applicationPortalApp.applicationPortalGeneral(accessKey, secretKey, orgId, url)
+
+    # Business Process Management Service
+    # https://support.envisioniot.com/docs/bpm-api/en/2.3.0/overview.html
+    aep.businessprocessmanagement.businessProcessManagementApp.businessProcessManagementGeneral(accessKey, secretKey, orgId, url)
+
 
 
 
