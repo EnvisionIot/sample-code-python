@@ -47,7 +47,10 @@ import aep.applicationportal.application.getUnresolvedMessages as getUnresolvedM
 
 def applicationPortalGeneral(accessKey, secretKey, orgId, url):
 
-    '''1. Authentication'''
+    '''
+    1. Authentication
+    https://support.envisioniot.com/docs/app-portal-api/en/2.3.0/authentication/index_authentication.html
+    '''
     # accessToken = login_py.login(accessKey, secretKey, url)
     # accessToken = login_py.login_admin(accessKey, secretKey, url)
 
@@ -61,7 +64,10 @@ def applicationPortalGeneral(accessKey, secretKey, orgId, url):
 
     # logout_py.logout(accessKey, secretKey, url, newAccessToken)
 
-    '''2. Users and Organisation'''
+    '''
+    2. Users and Organisation
+    https://support.envisioniot.com/docs/app-portal-api/en/2.3.0/user_and_ou/index_user_ou.html
+    '''
     # createAndJoinUser_py.createAndJoinUser(accessKey, secretKey, orgId, url)
 
     # joinUsers_py.joinUsers(accessKey, secretKey, orgId, url)
@@ -116,7 +122,10 @@ def applicationPortalGeneral(accessKey, secretKey, orgId, url):
 
     # removerUser_py.removeUser(accessKey, secretKey, orgId, url)
 
-    '''3. Asset (Requires assets to be synchronize)'''
+    '''
+    3. Asset (Requires assets to be synchronize)
+    https://support.envisioniot.com/docs/app-portal-api/en/2.3.0/asset/index_asset.html
+    '''
     # authorizeAsset_py.authorizeAsset(accessKey, secretKey, orgId, url)
 
     # checkAssetPermission_py.checkAssetPermission(accessKey, secretKey, url, accessToken)
@@ -133,7 +142,10 @@ def applicationPortalGeneral(accessKey, secretKey, orgId, url):
 
     # getUsersWithAssetAccess_py.getUsersWithAssetAccess(accessKey, secretKey, orgId, url)
 
-    '''4. Application'''
+    '''
+    4. Application
+    https://support.envisioniot.com/docs/app-portal-api/en/2.3.0/application/index_app.html
+    '''
     # createMessage_py.createMessage(accessKey, secretKey, orgId, url)
 
     # getAppMenuAndPermission_py.getAppMenuAndPermission(accessKey, secretKey, url, accessToken)
