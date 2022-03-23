@@ -26,6 +26,7 @@ def queryProcessInstance(accessKey, secretKey, url, accessToken):
     print(header)
 
     body = {"processStatus": "inProgress",
+            # Optional Parameters
             "processName": "Python_ProcessInstance",
             "processInstanceId": "705061a4-a9ba-11ec-ad0f-8e1ac2659f4c",
             "startedBefore": current_time,
@@ -37,5 +38,5 @@ def queryProcessInstance(accessKey, secretKey, url, accessToken):
                                        "order": "asc"}]}
             }
 
-    response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body, headers=header)
+    response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body, header)
     print(response)
