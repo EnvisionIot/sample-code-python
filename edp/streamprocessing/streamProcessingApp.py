@@ -26,9 +26,9 @@ def streamProcessingGeneral(accessKey, secretKey, orgId, url):
 
     # DeleteStageState_py.deleteStageState(accessKey, secretKey, orgId, url,
     #                                pipelineId="1010eac9-7770-4769-8011-2b02d761d5e0",
-    #                                stageInstanceName="",
-    #                                assetIds="",
-    #                                pointIds="")
+    #                                stageInstanceName=  "LatePointTagger_01",
+    #                                assetIds="ChahG3d9",
+    #                                pointIds="temp")
 
     # GetPipelineOffsetAndLag.getPipelineOffsetAndLag(accessKey, secretKey, orgId, url, pipelineId= pipeline_Id)
 
