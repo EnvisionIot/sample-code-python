@@ -13,9 +13,9 @@ import poseidon.poseidon
 from requests.models import PreparedRequest
 
 
-def completeTask(accessKey, secretKey, url, accessToken):
+def completeTask(accessKey, secretKey, url, accessToken, taskId):
     accessURL = url + "/enos-bpm-service/v2.0/work/tasks/complete"
-    params = {"taskId": "1e105814-aa91-11ec-ad0f-8e1ac2659f4c"}
+    params = {"taskId": taskId}
     req = PreparedRequest()
     req.prepare_url(accessURL, params)
     print(req.url)
@@ -23,9 +23,9 @@ def completeTask(accessKey, secretKey, url, accessToken):
     header = {"Authorization": "Bearer " + accessToken}
     print(header)
 
-    body = {"values": {"SingleLine_Variable":"SingleLine_Answer"},
-            "outcome": "outcome?"}
+    body = {"values": {"SingleLine_Variable":"SingleLine_AnswerOnAPI"},
+            "outcome": "Key"}
     print(body)
 
-    response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body, headers=header)
+    response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body, header)
     print(response)

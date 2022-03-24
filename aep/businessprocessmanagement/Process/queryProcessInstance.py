@@ -17,7 +17,7 @@ current_time = round(time.time()*1000)
 
 def queryProcessInstance(accessKey, secretKey, url, accessToken):
     accessURL = url + "/enos-bpm-service/v2.0/work/process-instances/queryList"
-    params = {"processInstanceId": "705061a4-a9ba-11ec-ad0f-8e1ac2659f4c"}
+    params = {}
     req = PreparedRequest()
     req.prepare_url(accessURL, params)
     print(req.url)
@@ -28,15 +28,17 @@ def queryProcessInstance(accessKey, secretKey, url, accessToken):
     body = {"processStatus": "inProgress",
             # Optional Parameters
             "processName": "Python_ProcessInstance",
-            "processInstanceId": "705061a4-a9ba-11ec-ad0f-8e1ac2659f4c",
-            "startedBefore": current_time,
-            "startedAfter": "1647302400000",
-            "startBy": "u16473063753681521",
+            # "processInstanceId": "54366b8f-ab3d-11ec-8df5-120e04f331d8",
+            # "startedBefore": current_time,
+            # "startedAfter": "1647302400000",
+            # "startBy": "u16473063753681521",
             "pagination":  {"current": 0,
                             "pageSize": 5,
-                            "sorts": [{"field": "name",
-                                       "order": "asc"}]}
+                            "sorts": [{"field": "createdTime",
+                                       "order": "ASC"}]
+                                       }
             }
+    print(body)
 
     response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body, header)
     print(response)

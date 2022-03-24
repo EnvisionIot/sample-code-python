@@ -13,9 +13,9 @@ import poseidon.poseidon
 from requests.models import PreparedRequest
 
 
-def getTask(accessKey, secretKey, url, accessToken):
+def getTask(accessKey, secretKey, url, accessToken, taskId):
     accessURL = url + "/enos-bpm-service/v2.0/work/tasks"
-    params = {"taskId": "902b01d4-aa91-11ec-ad0f-8e1ac2659f4c"}
+    params = {"taskId": taskId}
     req = PreparedRequest()
     req.prepare_url(accessURL, params)
     print(req.url)

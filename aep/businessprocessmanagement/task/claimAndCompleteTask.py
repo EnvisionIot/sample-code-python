@@ -1,21 +1,21 @@
 """
  * Copyright (C), 2015-2021, Envision
- * FileName: terminateProcessInstance
+ * FileName: claimAndCompleteTask
  * Author:  Dylan Yeo
  * Date:    23/03/22
- * Description: Terminate a process instance
+ * Description: Claim a task
  * <author>          <time>          <version>          <desc>
  *
- * https://support.envisioniot.com/docs/bpm-api/en/2.3.0/process/terminate_process_instance.html
+ * https://support.envisioniot.com/docs/bpm-api/en/2.3.0/task/claim_and_complete_task.html
 """
 
 import poseidon.poseidon
 from requests.models import PreparedRequest
 
 
-def terminateProcessInstance(accessKey, secretKey, url, accessToken, processInstanceId):
-    accessURL = url + "/enos-bpm-service/v2.0/work/process-instances"
-    params = {"action": "delete", "processInstanceId": processInstanceId}
+def claimAndCompleteTask(accessKey, secretKey, url, accessToken, taskId):
+    accessURL = url + "/enos-bpm-service/v2.0/work/tasks/" + taskId + "/claim-complete"
+    params = {}
     req = PreparedRequest()
     req.prepare_url(accessURL, params)
     print(req.url)
@@ -23,7 +23,9 @@ def terminateProcessInstance(accessKey, secretKey, url, accessToken, processInst
     header = {"Authorization": "Bearer " + accessToken}
     print(header)
 
-    body = {"deleteReason": "YourDeleteReason"}
+    body = {"values": {"SingleLine_Variable":"SingleLine_AnswerOnAPI"},
+            "outcome": "Key"
+            }
     print(body)
 
     response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body, header)

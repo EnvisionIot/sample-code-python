@@ -23,12 +23,12 @@ def startProcessInstance(accessKey, secretKey, url, accessToken):
     header = {"Authorization": "Bearer " + accessToken}
     print(header)
 
-    body = {"processDefinitionId": "81dd4fd7-aa6b-11ec-ad0f-8e1ac2659f4c",
-            "values": {"Key1":"Value1"},
+    body = {"processDefinitionId": "312844b2-ab3d-11ec-8df5-120e04f331d8",
+            "values": {"Key":"Value"},
             # Optional Parameters
-            "name": "API_Python_ProcessInstance",
+            "name": "Python_ProcessInstance_ByAPI",
             #"formId": "",
-            #"outcome": ""
+            "outcome": "Key"
             }
 
     response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body, header)

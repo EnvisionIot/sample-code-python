@@ -15,7 +15,7 @@ import time
 
 current_time = round(time.time()*1000)
 
-def queryProcessInstanceByView(accessKey, secretKey, url, accessToken, displayViewKey):
+def queryProcessInstanceByView(accessKey, secretKey, url, accessToken, displayViewKey, id):
     accessURL = url + "/enos-bpm-service/v2.0/work/display-view/" + displayViewKey + "/process-instances/query"
     params = {}
     req = PreparedRequest()
@@ -25,16 +25,16 @@ def queryProcessInstanceByView(accessKey, secretKey, url, accessToken, displayVi
     header = {"Authorization": "Bearer " + accessToken}
     print(header)
 
-    body = {"columns": [{"id": "adf38f2eea9a211ecad0f8e1ac2659f4c",
-                         "filter": "inprogress"
+    body = {"columns": [{"id": id,
+                         "filter": "inProgress"
                          }],
             "pagination":  {"current": 0,
                             "pageSize": 5,
-                            "sorts": [{"field": "name",
-                                       "order": "asc"}]
+                            "sorts": [{"field": "started",
+                                       "order": "DESC"}]
                                       }
             }
     print(body)
 
-    response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body, headers=header)
+    response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body, header)
     print(response)

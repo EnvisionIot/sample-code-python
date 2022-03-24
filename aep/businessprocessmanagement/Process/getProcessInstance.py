@@ -13,9 +13,9 @@ import poseidon.poseidon
 from requests.models import PreparedRequest
 
 
-def getProcessInstance(accessKey, secretKey, url, accessToken):
+def getProcessInstance(accessKey, secretKey, url, accessToken, processInstanceId):
     accessURL = url + "/enos-bpm-service/v2.0/work/process-instances"
-    params = {"processInstanceId": "705061a4-a9ba-11ec-ad0f-8e1ac2659f4c"}
+    params = {"processInstanceId": processInstanceId}
     req = PreparedRequest()
     req.prepare_url(accessURL, params)
     print(req.url)

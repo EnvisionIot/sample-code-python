@@ -25,14 +25,14 @@ def queryTask(accessKey, secretKey, url, accessToken):
 
     body = {"taskStatus": "inProgress",
             #optional parameters
-            # "processInstanceId": "0a2c65dd-aa75-11ec-ad0f-8e1ac2659f4c",
+            # "processInstanceId": "54366b8f-ab3d-11ec-8df5-120e04f331d8",
             # "processName": "Python_ProcessInstance",
-            # "taskName": "User Task",
-            # "pagination": {"current": 0,
-            #                "pageSize": 10,
-            #                "sorts": [{"field": "name",
-            #                           "order": "asc"}]
-            #                }
+            # "taskName": "Python Task 1",
+            "pagination": {"current": 0,
+                           "pageSize": 5,
+                           # "sorts": [{"field": "createdTime",
+                           #            "order": "DESC"}]
+                           }
             }
     print(body)
 
