@@ -25,6 +25,7 @@ import edp.dataFederation.dataFederationApp
 import edp.batchProcessing.batchProcessingApp
 import aep.applicationportal.applicationPortalApp
 import aep.businessprocessmanagement.businessProcessManagementApp
+import aep.iam.iamApp
 
 
 
@@ -118,7 +119,13 @@ if __name__ == '__main__':
 
     # Business Process Management Service
     # https://support.envisioniot.com/docs/bpm-api/en/2.3.0/overview.html
-    aep.businessprocessmanagement.businessProcessManagementApp.businessProcessManagementGeneral(accessKey, secretKey, orgId, url)
+    # aep.businessprocessmanagement.businessProcessManagementApp.businessProcessManagementGeneral(accessKey, secretKey, orgId, url)
+
+    # Notification Service
+
+    # IAM Service
+    # https://support.envisioniot.com/docs/iam-api/en/2.3.0/overview.html
+    aep.iam.iamApp.iamGeneral(accessKey, secretKey, orgId, url)
 
 
 
