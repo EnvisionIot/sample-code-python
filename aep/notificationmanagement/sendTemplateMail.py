@@ -12,17 +12,21 @@
 import poseidon.poseidon
 from requests.models import PreparedRequest
 
-def sendTemplateMail(accessKey, secretKey, url):
+def sendTemplateMail(accessKey, secretKey, orgId, url):
     accessURL = url + "/notification-center-service/v2.0/template/email"
     params = {"orgId": orgId}
     req = PreparedRequest()
     req.prepare_url(accessURL, params)
     print(req.url)
 
-    body = {"variables": 0,
-            "templateCode": "",
-            "toAddresses": "",
-            "senderCode": ""
+    body = {"variables": "",
+            "templateCode": "AMC_MAIL_EN_STEP_NOTIFI",
+            "toAddresses": "dylan.yeo@envision-digital.com",
+            "senderCode": "operator@support.envisioniot.com",
+            # optional parameters
+            # "ccAddresses": "",
+            # "priority": "",
+            # "extras": ""
             }
     print(body)
 

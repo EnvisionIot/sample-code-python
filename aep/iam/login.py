@@ -37,5 +37,5 @@ def login(accessKey, secretKey, url):
     try:
         sessionId = response["sessionId"]
     except:
-        sessionId = None
+        sessionId = ""
     return sessionId
