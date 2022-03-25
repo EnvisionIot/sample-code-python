@@ -52,7 +52,6 @@ def applicationPortalGeneral(accessKey, secretKey, orgId, url):
     https://support.envisioniot.com/docs/app-portal-api/en/2.3.0/authentication/index_authentication.html
     '''
     # accessToken = login_py.login(accessKey, secretKey, url)
-    # accessToken = login_py.login_admin(accessKey, secretKey, url)
 
     # refreshToken = chooseOrganization_py.chooseOrganization(accessKey, secretKey, orgId, url, accessToken)
 
