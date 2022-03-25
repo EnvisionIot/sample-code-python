@@ -19,7 +19,7 @@ def listUserOrganization(accessKey, secretKey, url, sessoinId):
     req.prepare_url(accessURL, params)
     print(req.url)
 
-    header ={"Authorization": sessoinId}
+    header ={"Authorization": "Bearer " + sessoinId}
     print(header)
 
     response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, headers=header, method="POST")

@@ -19,7 +19,7 @@ def getOrganization(accessKey, secretKey, orgId, url, sessoinId):
     req.prepare_url(accessURL, params)
     print(req.url)
 
-    header = {"Authorization": sessoinId}
+    header = {"Authorization": "Bearer " + sessoinId}
     print(header)
 
     body = {"id": orgId}
