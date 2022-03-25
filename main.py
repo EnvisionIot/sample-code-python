@@ -26,6 +26,7 @@ import edp.batchProcessing.batchProcessingApp
 import aep.applicationportal.applicationPortalApp
 import aep.businessprocessmanagement.businessProcessManagementApp
 import aep.iam.iamApp
+import aep.notificationmanagement.notificationManagementApp
 
 
 
@@ -122,6 +123,8 @@ if __name__ == '__main__':
     # aep.businessprocessmanagement.businessProcessManagementApp.businessProcessManagementGeneral(accessKey, secretKey, orgId, url)
 
     # Notification Service
+    # https://support.envisioniot.com/docs/notification-mgmt-api/en/2.3.0/overview.html
+    # aep.notificationmanagement.notificationManagementApp.notificationManagementGeneral(accessKey, secretKey, orgId, url)
 
     # IAM Service
     # https://support.envisioniot.com/docs/iam-api/en/2.3.0/overview.html

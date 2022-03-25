@@ -21,9 +21,9 @@ def login(accessKey, secretKey, url):
 
     body = {"authType": 0,
             "principal": "dylan.yeo",
-            "credentials": "Starmiesideup321"
+            "credentials": ""
             }
-    print(body)
+    # print(body)
 
     response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body)
     print(response)
