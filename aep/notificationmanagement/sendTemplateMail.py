@@ -20,8 +20,8 @@ def sendTemplateMail(accessKey, secretKey, url):
     print(req.url)
 
     body = {"variables": 0,
-            "templateCode": "dylan.yeo",
-            "toAddresses": "Starmiesideup321",
+            "templateCode": "",
+            "toAddresses": "",
             "senderCode": ""
             }
     print(body)

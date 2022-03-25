@@ -21,7 +21,13 @@ def login(accessKey, secretKey, url):
 
     body = {"authType": 0,
             "principal": "",
-            "credentials": ""
+            "credentials": "",
+            # optional paraemeters
+            # "linkName": "",
+            # "keyId": "",
+            # "captcha": "",
+            # "clientIp": "",
+            # "expireInterval": ""
             }
     print(body)
 
