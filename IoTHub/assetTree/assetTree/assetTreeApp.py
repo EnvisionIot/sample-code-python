@@ -46,6 +46,9 @@ def AssetTreeGeneral(accessKey, secretKey, orgId, url):
     '''Update Existing Asset Tree using Existing_TreeId as declared above'''
     # UpdateAssetTree_py.UpdateAssetTree(accessKey, secretKey, orgId, url, Existing_TreeId)
 
+    '''Get Asset Tree'''
+    # GetAssetTree_py.GetAssetTree(accessKey, secretKey, orgId, url, Existing_TreeId)
+
     '''Search Asset Tree with projection and pagination'''
     # SearchAssetTree_py.SearchAssetTree(accessKey, secretKey, orgId, url)
 

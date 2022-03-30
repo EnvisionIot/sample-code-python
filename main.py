@@ -124,7 +124,7 @@ if __name__ == '__main__':
 
     # Notification Service
     # https://support.envisioniot.com/docs/notification-mgmt-api/en/2.3.0/overview.html
-    aep.notificationmanagement.notificationManagementApp.notificationManagementGeneral(accessKey, secretKey, orgId, url)
+    # aep.notificationmanagement.notificationManagementApp.notificationManagementGeneral(accessKey, secretKey, orgId, url)
 
     # IAM Service
     # https://support.envisioniot.com/docs/iam-api/en/2.3.0/overview.html

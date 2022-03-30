@@ -34,7 +34,7 @@ def GetEvent(accessKey, secretKey, orgId, url):
 
 def GetEvent_ResolveName(accessKey, secretKey, orgId, url):
     accessURL = url + '/connect-service/v2.1/events'
-    params = {"action": "get", "orgId": orgId, "eventId": eventId, "resolveName": True}
+    params = {"action": "get", "orgId": orgId, "eventId": eventId, "resolveName": "true"}
     req = PreparedRequest()
     req.prepare_url(accessURL, params)
     print(req.url)

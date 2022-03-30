@@ -26,7 +26,7 @@ def GetAssetTrees(accessKey, secretKey, orgId, url):
     print(req.url)
 
     body = {"assetIds": ["AvxV8hkR"],
-            "projection":["treeId", "name"]
+            "projection":["*.[*].treeId","*.[*].tags","*.[*].asset","*.[*].name"]
             }
     print(body)
 

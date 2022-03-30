@@ -39,7 +39,7 @@ def createFirmwareFile(secretKey, orgId, url, productKey, token):
     file = open(filepath, 'rb')
 
     paramsData = "".join(x + y for x, y in params.items())
-    print("paransData:", paramsData)
+    print("paramsData:", paramsData)
 
     signData = token + paramsData + str(currentTime) + secretKey
     print("signData:", signData)
