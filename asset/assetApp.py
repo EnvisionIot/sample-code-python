@@ -1,9 +1,3 @@
-import IoTHub.asset.createLogicalAsset as CreateLogicalAsset_py
-import IoTHub.asset.deleteLogicalAsset as DeleteLogicalAsset_py
-import IoTHub.asset.updateLogicalAsset as UpdateLogicalAsset_py
-import IoTHub.asset.getAsset as GetAsset_py
-import IoTHub.asset.updateAsset as UpdateAsset_py
-
 #Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"
 #Device Asset assetId can be found on EnOS portal (Go to Device Management/Device Asset under Asset ID)

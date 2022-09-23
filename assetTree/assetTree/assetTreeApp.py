@@ -1,11 +1,3 @@
-import IoTHub.assetTree.assetTree.createAssetTree as CreateAssetTree_py
-import IoTHub.assetTree.assetTree.createAssetTreeAndAssociateAsset as CreateAssetTreeAndAssociateAsset_py
-import IoTHub.assetTree.assetTree.deleteAssetTree as DeleteAssetTree_py
-import IoTHub.assetTree.assetTree.getAssetTree as GetAssetTree_py
-import IoTHub.assetTree.assetTree.searchAssetTree as SearchAssetTree_py
-import IoTHub.assetTree.assetTree.updateAssetTree as UpdateAssetTree_py
-import IoTHub.asset.deleteLogicalAsset as DeleteLogicalAsset_py
-
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"
 # Device Asset assetId can be found on EnOS portal (Go to Device Management/Device Asset under Asset ID)

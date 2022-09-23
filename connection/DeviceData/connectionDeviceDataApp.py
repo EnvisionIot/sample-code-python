@@ -1,16 +1,3 @@
-import IoTHub.connection.DeviceData.cancelCommand as CancelCommand_py
-import IoTHub.connection.DeviceData.getCommand as GetCommand_py
-import IoTHub.connection.DeviceData.getEvent as GetEvent_py
-import IoTHub.connection.DeviceData.getLatestMeasurementPoints as GetLatestMeasurementPoints_py
-import IoTHub.connection.DeviceData.invokeService as InvokeService_py
-import IoTHub.connection.DeviceData.searchCommand as SearchCommand_py
-import IoTHub.connection.DeviceData.searchEvent as SearchEvent_py
-import IoTHub.connection.DeviceData.setMeasurementPoint as SetMeasurementPoint_py
-import IoTHub.connection.DeviceData.downloadFile as DownloadFile_py
-import IoTHub.connection.DeviceData.deleteFile as DeleteFile_py
-import IoTHub.connection.HTTPMessageIntegration.getToken as GetToken_py
-import time
-
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"
 # Device Asset Asset ID can be found on EnOS portal (Go to Device Management/Device Asset under Asset ID)

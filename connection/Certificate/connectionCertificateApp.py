@@ -1,7 +1,4 @@
-import IoTHub.connection.Certificate.applyCertificate as ApplyCertificate_py
-import IoTHub.connection.Certificate.renewCertificate as RenewCertificate_py
-import IoTHub.connection.Certificate.revokeCertificate as RevokeCertificate_py
-import IoTHub.connection.Certificate.listCertificate as ListCertificate_py
+import connection.Certificate.listCertificate as ListCertificate_py
 
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"

@@ -1,15 +1,3 @@
-import IoTHub.connection.Product.createProduct as CreateProduct_py
-import IoTHub.connection.Product.deleteProduct as DeleteProduct_py
-import IoTHub.connection.Device.createDevice as CreateDevice_py
-import IoTHub.connection.Device.deleteDevice as DeleteDevice_py
-import IoTHub.connection.Device.disableDevice as DisableDevice_py
-import IoTHub.connection.Device.enableDevice as EnableDevice_py
-import IoTHub.connection.Device.getDevice as GetDevice_py
-import IoTHub.connection.Device.replaceDevice as ReplaceDevice_py
-import IoTHub.connection.Device.searchDevice as SearchDevice_py
-import IoTHub.connection.Device.updateDevice as UpdateDevice_py
-import IoTHub.connection.Device.getDeviceStatistics as GetDeviceStatistics_py
-
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 Input_modelId = "python_4attri_model"
 

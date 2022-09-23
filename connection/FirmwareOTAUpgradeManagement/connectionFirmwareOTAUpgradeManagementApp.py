@@ -1,14 +1,3 @@
-import IoTHub.connection.FirmwareOTAUpgradeManagement.createOTAJob as CreateOTAJob_py
-import IoTHub.connection.FirmwareOTAUpgradeManagement.getOTAJob as GetOTAJob_py
-import IoTHub.connection.FirmwareOTAUpgradeManagement.searchOTAJob as SearchOTAJob_py
-import IoTHub.connection.FirmwareOTAUpgradeManagement.startOTAJob as StartOTAJob_py
-import IoTHub.connection.FirmwareOTAUpgradeManagement.stopOTAJob as StopOTAJob_py
-import IoTHub.connection.FirmwareOTAUpgradeManagement.deleteOTAJob as DeleteOTAJob_py
-import IoTHub.connection.FirmwareOTAUpgradeManagement.cancelOTATask as CancelOTATask_py
-import IoTHub.connection.FirmwareOTAUpgradeManagement.retryOTATask as RetryOTATask_py
-import IoTHub.connection.FirmwareOTAUpgradeManagement.searchOTATask as SearchOTATask_py
-import IoTHub.connection.FirmwareManagement.searchFirmwareFile as SearchFirmwareId
-
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"
 # Product Key can be found on EnOS Portal (Go to Products under Product Key)

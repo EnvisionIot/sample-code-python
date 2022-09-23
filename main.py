@@ -5,31 +5,6 @@
 import os
 from dotenv import load_dotenv
 
-import IoTHub.model.modelApp
-import IoTHub.connection.Product.connectionProductApp
-import IoTHub.connection.Device.connectionDeviceApp
-import IoTHub.connection.DeviceData.connectionDeviceDataApp
-import IoTHub.connection.Certificate.connectionCertificateApp
-import IoTHub.connection.GatewayAndSubDevices.connectionGatewayAndSubDevicesApp
-import IoTHub.connection.HTTPMessageIntegration.connectionHTTPMessageIntegrationApp
-import IoTHub.connection.FirmwareManagement.connectionFirmwareManagementApp
-import IoTHub.connection.FirmwareOTAUpgradeManagement.connectionFirmwareOTAUpgradeManagementApp
-import IoTHub.asset.assetApp
-import IoTHub.assetTree.assetTree.assetTreeApp
-import IoTHub.assetTree.assetTreeNode.assetTreeNodeApp
-import IoTHub.alert.alertApp
-import edp.streamprocessing.streamProcessingApp
-import edp.tsdbPolicy.tsdbPolicyApp
-import edp.tsdbData.tsdbDataApp
-import edp.dataFederation.dataFederationApp
-import edp.batchProcessing.batchProcessingApp
-import aep.applicationportal.applicationPortalApp
-import aep.businessprocessmanagement.businessProcessManagementApp
-import aep.iam.iamApp
-import aep.notificationmanagement.notificationManagementApp
-
-
-
 load_dotenv()
 
 # Press the green button in the gutter to run the script.

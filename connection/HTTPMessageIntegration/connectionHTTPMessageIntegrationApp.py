@@ -1,8 +1,5 @@
-import IoTHub.connection.HTTPMessageIntegration.uploadAttributes as UploadAttributes_py
-import IoTHub.connection.HTTPMessageIntegration.uploadEvents as UploadEvents_py
-import IoTHub.connection.HTTPMessageIntegration.uploadMeasurementPoints as UploadMeasurementPoints_py
-import IoTHub.connection.HTTPMessageIntegration.getToken as GetToken_py
-import IoTHub.connection.HTTPMessageIntegration.refreshToken as Refresh_py
+import connection.HTTPMessageIntegration.uploadMeasurementPoints as UploadMeasurementPoints_py
+import connection.HTTPMessageIntegration.getToken as GetToken_py
 
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"

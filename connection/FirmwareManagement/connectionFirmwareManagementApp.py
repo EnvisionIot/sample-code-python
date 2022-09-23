@@ -1,12 +1,6 @@
-import IoTHub.connection.FirmwareManagement.createFirmwareFile as CreateFirmwareFile_py
-import IoTHub.connection.FirmwareManagement.getFirmwareFile as GetFirmwareFile_py
-import IoTHub.connection.FirmwareManagement.listDeviceCurrentFirmware as ListDeviceCurrentFirmware_py
-import IoTHub.connection.FirmwareManagement.searchFirmwareFile as SearchFirmwareFile_py
-import IoTHub.connection.FirmwareManagement.searchDeviceUpgrade as SearchDeviceUpgrade_py
-import IoTHub.connection.FirmwareManagement.deleteFirmware as DeleteFirmware_py
+import connection.FirmwareManagement.createFirmwareFile as CreateFirmwareFile_py
 
-import IoTHub.connection.HTTPMessageIntegration.getToken as GetToken_py
-import IoTHub.connection.HTTPMessageIntegration.refreshToken as RefreshToken_py
+import connection.HTTPMessageIntegration.getToken as GetToken_py
 
 ModelId = "Python_Demo_Model"
 ProductKey = "4kZqiPoC"

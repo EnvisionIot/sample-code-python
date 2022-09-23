@@ -1,35 +1,3 @@
-import edp.tsdbData.v2_0.filterAssetLatestData_V2_0 as FilterAssetLatestData_V2_0_py
-import edp.tsdbData.v2_0.getAssetAIDataWithAggregationLogic_V2_0 as GetAssetAIDataWithAggregationLogic_V2_0_py
-import edp.tsdbData.v2_0.getAssetAIRawData_V2_0 as GetAssetAIRawData_V2_0_py
-import edp.tsdbData.v2_0.getAssetCurrentDayElectricPower_V2_0 as GetAssetCurrentDayElectricPower_V2_0_py
-import edp.tsdbData.v2_0.getAssetDIData_V2_0 as GetAssetDIData_V2_0_py
-import edp.tsdbData.v2_0.getAssetDIDataDuration_V2_0 as GetAssetDIDataDuration_V2_0_py
-import edp.tsdbData.v2_0.getAssetElectricPowerData_V2_0 as GetAssetElectricPowerData_V2_0_py
-import edp.tsdbData.v2_0.getAssetGenericData_V2_0 as GetAssetGenericData_V2_0_py
-import edp.tsdbData.v2_0.getAssetLatestData_V2_0 as GetAssetLatestData_V2_0_py
-import edp.tsdbData.v2_0.getAssetRawDataByTimeRange_V2_0 as GetAssetRawDataByTimeRange_V2_0_py
-import edp.tsdbData.v2_1.filterAssetLatestData_V2_1 as FilterAssetLatestData_V2_1_py
-import edp.tsdbData.v2_1.getAssetAIDataWithAggregationLogic_V2_1 as GetAssetAIDataWithAggregationLogic_V2_1_py
-import edp.tsdbData.v2_1.getAssetAIRawData_V2_1 as GetAssetAIRawData_V2_1_py
-import edp.tsdbData.v2_1.getAssetCurrentDayElectricPower_V2_1 as GetAssetCurrentDayElectricPower_V2_1_py
-import edp.tsdbData.v2_1.getAssetDIData_V2_1 as GetAssetDIData_V2_1_py
-import edp.tsdbData.v2_1.getAssetDIDataDuration_V2_1 as GetAssetDIDataDuration_V2_1_py
-import edp.tsdbData.v2_1.getAssetElectricPowerData_V2_1 as GetAssetElectricPowerData_V2_1_py
-import edp.tsdbData.v2_1.getAssetGenericData_V2_1 as GetAssetGenericData_V2_1_py
-import edp.tsdbData.v2_1.getAssetLatestData_V2_1 as GetAssetLatestData_V2_1_py
-import edp.tsdbData.v2_1.getAssetRawDataByTimeRange_V2_1 as GetAssetRawDataByTimeRange_V2_1_py
-import edp.tsdbData.v2_1.getAssetUnformattedData as GetAssetUnformattedData_py
-import edp.tsdbData.v2_1.deleteAssetLatestData as DeleteAssetLatestData_py
-import edp.tsdbData.v2_1.getLastChangedData as GetLastChangedData_py
-import edp.tsdbData.v2_1.checkDeadData as CheckDeadData_py
-import edp.tsdbData.v2_1.submitDataDeletionJob as SubmitDataDeletionJob_py
-import edp.tsdbData.v2_1.getDataDeletionDetails as GetDataDeletionDetails_py
-import edp.tsdbData.v2_1.resubmitDataDeletionJob as ResubmitDataDeletionJob_py
-
-import IoTHub.connection.HTTPMessageIntegration.getToken as GetToken_py
-import IoTHub.connection.HTTPMessageIntegration.uploadMeasurementPoints as UploadMeasurementPoints_py
-
-import random
 import time
 from datetime import datetime
 

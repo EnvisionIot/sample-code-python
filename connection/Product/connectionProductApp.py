@@ -1,9 +1,3 @@
-import IoTHub.connection.Product.createProduct as CreateProduct_py
-import IoTHub.connection.Product.deleteProduct as DeleteProduct_py
-import IoTHub.connection.Product.getProduct as GetProduct_py
-import IoTHub.connection.Product.searchProduct as SearchProduct_py
-import IoTHub.connection.Product.updateProduct as UpdateProduct_py
-
 # Model Id can be found on EnOS portal under MOdelID (Go to Models)
 Input_modelId = "python_4attri_model"
 

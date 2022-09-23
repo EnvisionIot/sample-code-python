@@ -1,8 +1,3 @@
-import IoTHub.connection.GatewayAndSubDevices.addSubDevice as AddSubDevice_py
-import IoTHub.connection.GatewayAndSubDevices.getGateway as GetGateway_py
-import IoTHub.connection.GatewayAndSubDevices.removeSubDevice as RemoveSubDevice_py
-import IoTHub.connection.GatewayAndSubDevices.searchSubDevice as SearchSubDevice_py
-
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"
 # Gateway Asset Asset ID can be found on EnOS portal (Go to Device Management/Device Asset under Asset ID)

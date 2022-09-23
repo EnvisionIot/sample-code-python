@@ -1,15 +1,15 @@
-import IoTHub.model.getThings
-import IoTHub.model.searchThingModel as SearchThingModel
+import model.getThings
+
 
 def modelGeneral(accessKey, secretKey, orgId, url):
 
     #Get Thing Model
 
-    IoTHub.model.getThings.getThings(accessKey, secretKey, orgId, url)
+    model.getThings.getThings(accessKey, secretKey, orgId, url)
 
     #Search Thing Model
 
-    SearchThingModel.searchmodel_withexpression(accessKey, secretKey, orgId, url, "modelId in ( \"demo_lift_model\" )");
+    searchThingModel.searchmodel_withexpression(accessKey, secretKey, orgId, url, "modelId in ( \"demo_lift_model\" )");
     #SearchThingModel.searchmodel_withexpression(accessKey, secretKey, orgId, url,"modelId in ( \"EnOS_Solar_Site\", \"ESSHVAC\" )");
     #SearchThingModel.searchmodel_withexpression(accessKey, secretKey, orgId, url, "modelId in ( \"EnOS_Solar_Site\" )");
     #SearchThingModel.searchmodel_withexpression(accessKey, secretKey, orgId, url,"tags.amc_solar_o15952073792221_product = 'tA4ZSAFR' ");
@@ -34,3 +34,6 @@ def modelGeneral(accessKey, secretKey, orgId, url):
     #SearchThingModel.searchmodel_attributeTags(accessKey, secretKey, orgId, url);
     #SearchThingModel.searchmodel_serviceTags(accessKey, secretKey, orgId, url);
     #SearchThingModel.searchmodel_eventTags(accessKey, secretKey, orgId, url);
+
+    #Update Thing Model
+    #UpdateThingModel.updateThingModel(accessKey, secretKey, orgId, url)
