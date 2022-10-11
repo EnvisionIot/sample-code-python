@@ -11,14 +11,12 @@ def AssociateAssetBatch_assetId(accessKey, secretKey, orgId, url, treeId, parent
     print(req.url)
 
     body = {
-        "assetIdentifiersVoList": [
+        "assetIdentifiers": [
             {
-                "deviceKey": "yourDeviceKey1",
-                "productKey": "yourProductKey1"
+                "assetId": "yourAssetId1"
             },
             {
-                "deviceKey": "yourDeviceKey2",
-                "productKey": "yourProductKey2"
+                "assetId": "yourAssetId2"
             }
         ]
     }
@@ -36,14 +34,18 @@ def AssociateAssetBatch_Keys(accessKey, secretKey, orgId, url, treeId, parentAss
     print(req.url)
 
     body = {
-        "assetIdentifiersVoList": [
+        "assetIdentifiers": [
             {
-                "assetId": "yourAssetId1"
+                "deviceKey": "yourDeviceKey1",
+                "productKey": "yourProductKey1"
             },
             {
-                "assetId": "yourAssetId2"
+                "deviceKey": "yourDeviceKey2",
+                "productKey": "yourProductKey2"
             }
         ]
     }
+
     response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body)
     print(response)
+

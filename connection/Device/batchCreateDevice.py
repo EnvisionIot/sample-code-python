@@ -63,8 +63,8 @@ def BatchCreateDevice_MandatoryParams(accessKey, secretKey, orgId, url):
     response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body)
     print(response)
 
-    assetId = response["data"]["assetId"]
-    deviceKey = response["data"]["deviceKey"]
+    assetId = response["data"][0]["data"]["assetId"]
+    deviceKey = response["data"][0]["data"]["deviceKey"]
 
     return assetId, deviceKey
 
@@ -130,7 +130,7 @@ def CreateDevice_OptionalParams(accessKey, secretKey, orgId, url):
     response = poseidon.poseidon.urlopen(accessKey, secretKey, req.url, body)
     print(response)
 
-    assetId = response["data"]["assetId"]
-    deviceKey = response["data"]["deviceKey"]
+    assetId = response["data"][0]["data"]["assetId"]
+    deviceKey = response["data"][0]["data"]["deviceKey"]
 
     return assetId, deviceKey
