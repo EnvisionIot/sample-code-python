@@ -27,7 +27,7 @@ def AssociateAssetBatch_assetId(accessKey, secretKey, orgId, url, treeId, parent
 
 def AssociateAssetBatch_Keys(accessKey, secretKey, orgId, url, treeId, parentAssetId):
     accessURL = url + '/asset-tree-service/v2.1/asset-nodes'
-    params = {"action": "associateAsset", "orgId": orgId,
+    params = {"action": "associateAssetBatch", "orgId": orgId,
               "treeId": treeId, "parentAssetId": parentAssetId}
     req = PreparedRequest()
     req.prepare_url(accessURL, params)
