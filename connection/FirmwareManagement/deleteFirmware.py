@@ -19,9 +19,9 @@ import poseidon.poseidon
 from requests.models import PreparedRequest
 
 
-def deleteFirmwareFile(accessKey, secretKey, orgId, url, firmware):
+def deleteFirmwareFile(accessKey, secretKey, orgId, url, firmwareId):
     accessURL = url + '/connect-service/v2.1/ota-firmwares'
-    params = {"action": "delete", "orgId": orgId, "firmwareId": firmware}
+    params = {"action": "delete", "orgId": orgId, "firmwareId": firmwareId}
     req = PreparedRequest()
     req.prepare_url(accessURL, params)
     print(req.url)

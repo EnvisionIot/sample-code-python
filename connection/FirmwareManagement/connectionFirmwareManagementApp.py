@@ -6,6 +6,7 @@ ModelId = "Python_Demo_Model"
 ProductKey = "4kZqiPoC"
 DeviceKey = "RqMa4xiwqo"
 AssetId = "G5M8Ojhd"
+FirmwareId = "firmwareId"
 
 
 def ConnectionFirmwareManagementGeneral(accessKey, secretKey, orgId, url):
@@ -13,7 +14,7 @@ def ConnectionFirmwareManagementGeneral(accessKey, secretKey, orgId, url):
     # RefreshToken_py.refreshToken(accessKey,secretKey, url, getToken)
     CreateFirmwareFile_py.createFirmwareFile(secretKey, orgId, url, ProductKey, getToken)
 
-    # DeleteFirmware_py.deleteFirmwareFile(accessKey, secretKey, orgId, url)
+    # DeleteFirmware_py.deleteFirmwareFile(accessKey, secretKey, orgId, url, FirmwareId)
 
     # GetFirmwareFile_py.getFirmwareFile(accessKey, secretKey, orgId, url, "62046c6182355078ea03cd7a")
 
