@@ -1,14 +1,14 @@
-import edp.streamprocessing.getStageState as GetStageState_py
-import edp.streamprocessing.deleteStageState as DeleteStageState_py
-import edp.streamprocessing.listPipelines as ListPipelines_py
-import edp.streamprocessing.getPipelineDetails as GetPipelineDetails_py
-import edp.streamprocessing.getPipelineOffsetAndLag as GetPipelineOffsetAndLag
-import edp.streamprocessing.resetPipelineOffset as ResetPipelineOffset
-import edp.streamprocessing.operatepipeline.startPipeline as StartPipeline_py
-import edp.streamprocessing.operatepipeline.pausePipeline as PausePipeline_py
-import edp.streamprocessing.operatepipeline.stopPipeline as StopPipeline_py
-import edp.streamprocessing.operatepipeline.savePipeline as SavePipeline_py
-import edp.streamprocessing.operatepipeline.releasePipeline as ReleasePipeline_py
+import streamprocessing.getStageState as GetStageState_py
+import streamprocessing.deleteStageState as DeleteStageState_py
+import streamprocessing.listPipelines as ListPipelines_py
+import streamprocessing.getPipelineDetails as GetPipelineDetails_py
+import streamprocessing.getPipelineOffsetAndLag as GetPipelineOffsetAndLag
+import streamprocessing.resetPipelineOffset as ResetPipelineOffset
+import streamprocessing.operatepipeline.startPipeline as StartPipeline_py
+import streamprocessing.operatepipeline.pausePipeline as PausePipeline_py
+import streamprocessing.operatepipeline.stopPipeline as StopPipeline_py
+import streamprocessing.operatepipeline.savePipeline as SavePipeline_py
+import streamprocessing.operatepipeline.releasePipeline as ReleasePipeline_py
 
 pipeline_Id= "1010eac9-7770-4769-8011-2b02d761d5e0"
 

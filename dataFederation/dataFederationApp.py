@@ -1,13 +1,13 @@
-import edp.dataFederation.listChannels as ListChannels_py
-import edp.dataFederation.readData as ReadData_py
-import edp.dataFederation.listJobs as ListJobs_py
-import edp.dataFederation.getJobDetails as GetJobDetails_py
-import edp.dataFederation.writeMessage as WriteMessage_py
-import edp.dataFederation.writeChunkFile as WriteChunkFile_py
-import edp.dataFederation.operateChannel as OperateChannel_py
-import edp.dataFederation.createDownloadRequest as CreateDownloadRequest_py
-import edp.dataFederation.getDownloadStatus as GetDownloadStatus_py
-import edp.dataFederation.cancelDownload as CancelDownload_py
+import dataFederation.listChannels as ListChannels_py
+import dataFederation.readData as ReadData_py
+import dataFederation.listJobs as ListJobs_py
+import dataFederation.getJobDetails as GetJobDetails_py
+import dataFederation.writeMessage as WriteMessage_py
+import dataFederation.writeChunkFile as WriteChunkFile_py
+import dataFederation.operateChannel as OperateChannel_py
+import dataFederation.createDownloadRequest as CreateDownloadRequest_py
+import dataFederation.getDownloadStatus as GetDownloadStatus_py
+import dataFederation.cancelDownload as CancelDownload_py
 import base64
 
 

@@ -1,10 +1,10 @@
-import edp.tsdbPolicy.v2_0.getMeasurementPointTSDBMetadata as GetMeasurementPointTSDBMetadata_py
-import edp.tsdbPolicy.v2_0.getStoragePolicy_V2_0 as GetStoragePolicy_V2_0_py
-import edp.tsdbPolicy.v2_0.saveStoragePolicy_V2_0 as SaveStoragePolicy_V2_0_py
-import edp.tsdbPolicy.v2_1.getStoragePolicy_V2_1 as GetStoragePolicy_V2_1_py
-import edp.tsdbPolicy.v2_1.saveStoragePolicy_V2_1 as SaveStoragePolicy_V2_1_py
-import edp.tsdbPolicy.v2_1.getUnformattedPolicy as GetUnformattedPolicy_py
-import edp.tsdbPolicy.v2_1.updateUnformattedPolicy as UpdateUnformattedPolicy_py
+import tsdbPolicy.v2_0.getMeasurementPointTSDBMetadata as GetMeasurementPointTSDBMetadata_py
+import tsdbPolicy.v2_0.getStoragePolicy_V2_0 as GetStoragePolicy_V2_0_py
+import tsdbPolicy.v2_0.saveStoragePolicy_V2_0 as SaveStoragePolicy_V2_0_py
+import tsdbPolicy.v2_1.getStoragePolicy_V2_1 as GetStoragePolicy_V2_1_py
+import tsdbPolicy.v2_1.saveStoragePolicy_V2_1 as SaveStoragePolicy_V2_1_py
+import tsdbPolicy.v2_1.getUnformattedPolicy as GetUnformattedPolicy_py
+import tsdbPolicy.v2_1.updateUnformattedPolicy as UpdateUnformattedPolicy_py
 
 
 def tsdbPolicyGeneral(accessKey, secretKey, orgId, url):
