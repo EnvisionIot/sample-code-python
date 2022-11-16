@@ -16,4 +16,4 @@ You need to replace the [environment variables](environment_variables.md) with t
 
 ## Release Notes
 
-2022/
+2022/12/30
