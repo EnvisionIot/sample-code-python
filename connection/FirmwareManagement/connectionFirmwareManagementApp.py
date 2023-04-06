@@ -3,9 +3,9 @@ import connection.FirmwareManagement.createFirmwareFile as CreateFirmwareFile_py
 import connection.HTTPMessageIntegration.getToken as GetToken_py
 
 ModelId = "Python_Demo_Model"
-ProductKey = "4kZqiPoC"
-DeviceKey = "RqMa4xiwqo"
-AssetId = "G5M8Ojhd"
+ProductKey = "pk1"
+DeviceKey = "dk1"
+AssetId = "assetId1"
 FirmwareId = "firmwareId"
 
 
@@ -18,14 +18,14 @@ def ConnectionFirmwareManagementGeneral(accessKey, secretKey, orgId, url):
 
     # GetFirmwareFile_py.getFirmwareFile(accessKey, secretKey, orgId, url, "62046c6182355078ea03cd7a")
 
-    # ListDeviceCurrentFirmware_py.listDeviceCurrentFirmware(accessKey, secretKey, orgId, url, "A1wKaFX6")
+    # ListDeviceCurrentFirmware_py.listDeviceCurrentFirmware(accessKey, secretKey, orgId, url, "a")
 
     '''Search Firmware File with pagination'''
     # SearchFirmwareFile_py.searchFirmwareFile(accessKey, secretKey, orgId, url)
 
     '''Search Firmware File with expression using product key'''
     # SearchFirmwareFile_py.searchFirmwareFile_Expression(accessKey, secretKey, orgId, url, "productKey = '" + ProductKey + "'")
-    # SearchFirmwareFile_py.searchFirmwareFile_Expression(accessKey, secretKey, orgId, url, "productKey in ('A1wKaFX6')")
+    # SearchFirmwareFile_py.searchFirmwareFile_Expression(accessKey, secretKey, orgId, url, "productKey in ('pk1')")
 
     '''Search Firmware File with expression using isVerified'''
     # SearchFirmwareFile_py.searchFirmwareFile_Expression(accessKey, secretKey, orgId, url, "isVerified = True")

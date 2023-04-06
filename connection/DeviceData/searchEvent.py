@@ -149,17 +149,17 @@ def SearchEvent_expression(accessKey, secretKey, orgId, url, expression):
     req.prepare_url(accessURL, params)
     print(req.url)
 
-    expression = "productKey = '4kZqiPoC'"
-    # expression = "productKey in ('4kZqiPoC')"
-    # expression = "deviceKey = 'RqMa4xiwqo'"
-    # expression = "deviceKey in ('RqMa4xiwqo')"
-    # expression = "assetId ='G5M8Ojhd'"
-    # expression = "assetId in ('G5M8Ojhd')"
+    expression = "productKey = 'pk1'"
+    # expression = "productKey in ('pk1')"
+    # expression = "deviceKey = 'dk1'"
+    # expression = "deviceKey in ('dk1')"
+    # expression = "assetId ='assetId1'"
+    # expression = "assetId in ('assetId1')"
     # expression = "tslEventKey = 'Event1'"
     # expression = "tslEventKey in ('Event1')"
     # expression = "tslEventType = 'INFO'"
     # expression = "tslEventType in ('INFO')"
-    # expression = "productKey = '4kZqiPoC' and deviceKey = 'RqMa4xiwqo'"
+    # expression = "productKey = 'pk1' and deviceKey = 'dk1'"
     # expression = "tslEventKey = 'Event1' or tslEventType = 'WARNING'"
 
     body = {"expression": expression

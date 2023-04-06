@@ -22,7 +22,7 @@ import requests
 from requests.models import PreparedRequest
 from requests_toolbelt.multipart.encoder import MultipartEncoder
 
-url = "https://iot-http-integration-ppe1.envisioniot.com"
+url = "https://http_integration_url"
 
 def UploadAttributes_assetId(orgId, token, assetId):
     accessURL = url + '/connect-service/v2.1/integration'
@@ -81,13 +81,13 @@ def UploadAttributes_Keys(orgId, token, productKey, deviceKey):
     body = MultipartEncoder(fields={
         'Content-Disposition': 'form-data',
         'enos-message': """{'method': 'integration.attribute.post', 'id': 123, 'version': '1.1',
-                        'params': [{'productKey': '4kZqiPoC','deviceKey': 'RqMa4xiwqo', 'attributes': {'Int_Attribute': 1, 'File_Attribute':'local://SampleFileAttributes.txt'}}],
+                        'params': [{'productKey': 'pk1','deviceKey': 'dk1', 'attributes': {'Int_Attribute': 1, 'File_Attribute':'local://SampleFileAttributes.txt'}}],
                         'files': { 
                             'SampleFileAttributes.txt': {
                                   'featureId': 'File_Attribute',
                                   'originalFilename': 'UploadFileSample.txt',
                                   'fileExt': '.txt',
-                                  'productKey': '4kZqiPoC','deviceKey': 'RqMa4xiwqo',
+                                  'productKey': 'pk1','deviceKey': 'dk1',
                                   
                                   'fileLength': 658
                                 }
@@ -125,15 +125,15 @@ def UploadAttributes_multifiles(orgId, token, assetId):
     body = MultipartEncoder(fields={
         'Content-Disposition': 'form-data',
         'enos-message': """{'method': 'integration.attribute.post', 'id': 123, 'version': '1.1', 
-                    'params': [{'assetId': 'G5M8Ojhd', 'attributes': {'Int_Attribute': 1, 'File_Attribute':'local://UploadFileSample.txt'}},
-                               {'assetId': 'Re2qPON3', 'attributes': {'Int_Attribute': 1, 'File_Attribute':'local://SampleFileAttributes.txt'}}
+                    'params': [{'assetId': 'assetId1', 'attributes': {'Int_Attribute': 1, 'File_Attribute':'local://UploadFileSample.txt'}},
+                               {'assetId': 'assetId2', 'attributes': {'Int_Attribute': 1, 'File_Attribute':'local://SampleFileAttributes.txt'}}
                     ],
                     'files': { 
                         'UploadFileSample.txt': {
                               'featureId': 'File_Attribute',
                               'originalFilename': 'UploadFileSample.txt',
                                 'fileExt': '.txt',
-                              'assetId' : 'G5M8Ojhd' ,
+                              'assetId' : 'assetId3' ,
                               
                               'fileLength': 658
                             },
@@ -141,7 +141,7 @@ def UploadAttributes_multifiles(orgId, token, assetId):
                               'featureId': 'File_Attribute',
                               'originalFilename': 'SampleFileAttributes.txt',
                                 'fileExt': '.txt',
-                              'assetId' : 'Re2qPON3' ,
+                              'assetId' : 'assetId4' ,
                               
                               'fileLength': 23
                             }    

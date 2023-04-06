@@ -3,11 +3,11 @@ import connection.Certificate.listCertificate as ListCertificate_py
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"
 # Device Asset assetId can be found on EnOS portal (Go to Device Management/Device Asset under Asset ID)
-AssetId = "G5M8Ojhd"
+AssetId = "assetId1"
 # Device Asset ProductKey can be found on EnOS portal (Go to Device Management/Products under Product Key)
-ProductKey = "4kZqiPoC"
+ProductKey = "pk1"
 # Device Asset Device Key can be found on the EnOS portal (Go to Device Management/Device Asset under Device Key)
-DeviceKey = "RqMa4xiwqo"
+DeviceKey = "dk1"
 
 
 file1 = open('resources/IoTHub/ConnectServiceModel/Certificate/csr (revoked).txt', 'r')

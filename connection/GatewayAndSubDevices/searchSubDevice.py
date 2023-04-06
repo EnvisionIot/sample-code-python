@@ -19,12 +19,12 @@ import poseidon.poseidon
 from requests.models import PreparedRequest
 
 ModelId = "Python_Demo_Model"
-SubDevice_ProductKey = "4kZqiPoC"
+SubDevice_ProductKey = "pk1"
 
-SubDevice_DeviceKey1 = "ma60hFFTeL"
-SubDevice_AssetId1 = "OPVD7NPz"
-SubDevice_DeviceKey2 = "GW46kFBhkA"
-SubDevice_AssetId2 = "Nmw9npSq"
+SubDevice_DeviceKey1 = "dk1"
+SubDevice_AssetId1 = "assetId1"
+SubDevice_DeviceKey2 = "dk2"
+SubDevice_AssetId2 = "assetid2"
 
 SubDevice_AttributeName = "Date_Attribute"
 SubDevice_AttributeValue = "2022-01-01"

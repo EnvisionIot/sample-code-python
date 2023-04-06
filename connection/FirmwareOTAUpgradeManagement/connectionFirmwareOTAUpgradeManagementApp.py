@@ -1,17 +1,17 @@
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"
 # Product Key can be found on EnOS Portal (Go to Products under Product Key)
-ProductKey = "Bgg1fqZS"
+ProductKey = "pk1"
 
 # Device Key can be found on EnOS Portal (Go to Device Assets under Device Key)
-DeviceKey = "wnUdCMJf5a"
-DeviceKey2 = "INQCUhOavq"
-DeviceKey3 = "YrY9DbaHiU"
+DeviceKey = "dk"
+DeviceKey2 = "dk2"
+DeviceKey3 = "dk3"
 
 # AssetId can be found on EnOS Portal (Go to Device Assets under Asset ID)
-AssetId = "mF2Xz3jp"
-AssetId2 = "nHMUggwB"
-AssetId3 = "uiVmGf0P"
+AssetId = "assetId1"
+AssetId2 = "assetId2"
+AssetId3 = "assetId3"
 
 # Firmware Id can be found by running searchFirmwareFile.py API and getting FirmwareId from response returned
 firmwareId_v1_0 = "6214661271125f2bf2b3f78f"
@@ -54,9 +54,9 @@ def ConnectionFirmwareOTAUpgradeManagementGeneral(accessKey, secretKey, orgId, u
     # jobId = CreateOTAJob_py.createOTAJob_verify_tags(accessKey, secretKey, orgId, url, firmwareId = firmwareId_v1_1, version = ["1.2"], tags = {"firmwarekey": ["firmware","firmwarevalue"]})
 
     '''Alternative: Create OTA Job and using assetTrees to specify devices'''
-    # jobId = CreateOTAJob_py.createOTAJob_upgrade_assetTrees(accessKey, secretKey, orgId, url, firmwareId = firmwareId_v1_1, version = ["1.0","1.2"], treeId = "loqyJOpX")
-    # jobId = CreateOTAJob_py.createOTAJob_upgrade_assetTrees(accessKey, secretKey, orgId, url, firmwareId = firmwareId_v1_1, version = ["1.0","1.2"], treeId = "loqyJOpX", includedNotes = "")
-    # jobId = CreateOTAJob_py.createOTAJob_verify_assetTrees(accessKey, secretKey, orgId, url, firmwareId = firmwareId_v1_1, version = ["1.0","1.2"], treeId = "loqyJOpX", includedNotes = "")
+    # jobId = CreateOTAJob_py.createOTAJob_upgrade_assetTrees(accessKey, secretKey, orgId, url, firmwareId = firmwareId_v1_1, version = ["1.0","1.2"], treeId = "treeId1")
+    # jobId = CreateOTAJob_py.createOTAJob_upgrade_assetTrees(accessKey, secretKey, orgId, url, firmwareId = firmwareId_v1_1, version = ["1.0","1.2"], treeId = "treeId1", includedNotes = "")
+    # jobId = CreateOTAJob_py.createOTAJob_verify_assetTrees(accessKey, secretKey, orgId, url, firmwareId = firmwareId_v1_1, version = ["1.0","1.2"], treeId = "treeId1", includedNotes = "")
 
     '''Start OTA Job'''
     # StartOTAJob_py.startOTAJob(accessKey, secretKey, orgId, url, jobId)
@@ -121,7 +121,7 @@ def ConnectionFirmwareOTAUpgradeManagementGeneral(accessKey, secretKey, orgId, u
 
     '''Search OTA Task with expression using device key'''
     # SearchOTATask_py.searchOTATask_Expression(accessKey, secretKey, orgId, url, "deviceKey ='" + DeviceKey + "'")
-    # SearchOTATask_py.searchOTATask_Expression(accessKey, secretKey, orgId, url, "deviceKey in ('wnUdCMJf5a', 'INQCUhOavq', 'YrY9DbaHiU')")
+    # SearchOTATask_py.searchOTATask_Expression(accessKey, secretKey, orgId, url, "deviceKey in ('dk1', 'dk2', 'dk3')")
 
     '''Search OTA Task with expression using fromversion'''
     # SearchOTATask_py.searchOTATask_Expression(accessKey, secretKey, orgId, url, "fromVersion = '1.0'")

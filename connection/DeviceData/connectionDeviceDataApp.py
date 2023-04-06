@@ -1,11 +1,11 @@
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"
 # Device Asset Asset ID can be found on EnOS portal (Go to Device Management/Device Asset under Asset ID)
-AssetId = "G5M8Ojhd"
+AssetId = "assetId1"
 # Device Asset Product Key can be found on EnOS portal (Go to Device Management/Products under Product Key)
-ProductKey = "4kZqiPoC"
+ProductKey = "pk1"
 # Device Asset Device Key can be found on the EnOS portal (Go to Device Management/Device Asset under Device Key)
-DeviceKey = "RqMa4xiwqo"
+DeviceKey = "dk1"
 
 
 def ConnectionDeviceDataGeneral(accessKey, secretKey, orgId, url):
@@ -125,17 +125,17 @@ def ConnectionDeviceDataGeneral(accessKey, secretKey, orgId, url):
     # SearchEvent_py.SearchEvent_endTime(accessKey, secretKey, orgId, url, "2022-01-25 10:32:32")
 
     '''Search for events with expression'''
-    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "productKey = '4kZqiPoC'")
-    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "productKey in ('4kZqiPoC')")
-    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "deviceKey = 'RqMa4xiwqo'")
-    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "deviceKey in ('RqMa4xiwqo')")
-    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "assetId ='G5M8Ojhd'")
-    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "assetId in ('G5M8Ojhd')")
-    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "tslEventKey = 'Event1'")
-    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "tslEventKey in ('Event1')")
+    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "productKey = 'pk1'")
+    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "productKey in ('pk1')")
+    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "deviceKey = 'dk1'")
+    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "deviceKey in ('dk1')")
+    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "assetId ='assetId1'")
+    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "assetId in ('assetId1')")
+    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "tslEventKey = 'event1'")
+    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "tslEventKey in ('event1')")
     # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "tslEventType = 'INFO'")
     # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "tslEventType in ('INFO')")
-    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "productKey = '4kZqiPoC' and deviceKey = 'RqMa4xiwqo'")
+    # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "productKey = 'pk1' and deviceKey = 'dk1'")
     # SearchEvent_py.SearchEvent_expression(accessKey, secretKey, orgId, url, "tslEventKey = 'Event1' or tslEventType = 'WARNING'")
 
     '''Generate Token for application use'''

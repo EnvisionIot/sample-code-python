@@ -1,22 +1,22 @@
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"
 # Gateway Asset Asset ID can be found on EnOS portal (Go to Device Management/Device Asset under Asset ID)
-Gateway_AssetId = "zhD6Kpfs"
+Gateway_AssetId = "assetId"
 # Gateway Asset Product Key can be found on EnOS portal (Go to Device Management/Products under Product Key)
-Gateway_ProductKey = "8f7KmDEC"
+Gateway_ProductKey = "pk"
 # Gateway Asset Device Key can be found on the EnOS portal (Go to Device Management/Device Asset under Device Key)
-Gateway_DeviceKey = "cJdubki1tb"
+Gateway_DeviceKey = "dk"
 
 # SubDevice Asset ID can be found on EnOS portal (Go to Device Management/Device Asset under Asset ID)
-SubDevice1_AssetId = "OPVD7NPz"
-SubDevice2_AssetId = "Nmw9npSq"
+SubDevice1_AssetId = "assetId2"
+SubDevice2_AssetId = "assetId3"
 
 # SubDevice/Device Asset ProductKey can be found on EnOS portal (Go to Device Management/Products under Product Key)
-SubDevice_ProductKey = "4kZqiPoC"
+SubDevice_ProductKey = "pk2"
 
 # SubDeviceDevice Asset Device Key can be found on the EnOS portal (Go to Device Management/Device Asset under Device Key)
-SubDevice1_DeviceKey = "ma60hFFTeL"
-SubDevice2_DeviceKey = "GW46kFBhkA"
+SubDevice1_DeviceKey = "assetId2"
+SubDevice2_DeviceKey = "assetId3"
 
 # These attributes can be found on the EnOS portal (Go to Device Management/Device/View(Device that you choose)/Attributes)
 SubDevice_AttributeName = "Date_Attribute"

@@ -1,9 +1,9 @@
 #Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"
 #Device Asset assetId can be found on EnOS portal (Go to Device Management/Device Asset under Asset ID)
-DeviceAsset_assetId = "G5M8Ojhd"
+DeviceAsset_assetId = "assetId1"
 #Logical Asset assetId can be found on EnOS portal (Go to Device Management/Logical Asset under Asset ID)
-LogicalAsset_assetId = "AvxV8hkR"
+LogicalAsset_assetId = "assetId2"
 
 def AssetGeneral(accessKey, secretKey, orgId, url):
 

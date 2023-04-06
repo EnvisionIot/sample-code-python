@@ -1,19 +1,19 @@
 # Model Id can be found on EnOS portal (Go to Models under Model ID)
 ModelId = "Python_Demo_Model"
 # Device Asset assetId can be found on EnOS portal (Go to Device Management/Device Asset under Asset ID)
-DeviceAsset_assetId = "G5M8Ojhd"
+DeviceAsset_assetId = "assetId1"
 # Device Asset ProductKey can be found on EnOS portal (Go to Device Management/Products under Product Key)
-DeviceAsset_ProductKey = "4kZqiPoC"
+DeviceAsset_ProductKey = "pk1"
 # Device Asset Device Key can be found on the EnOS portal (Go to Device Management/Device Asset under Device Key)
-DeviceAsset_DeviceKey = "RqMa4xiwqo"
+DeviceAsset_DeviceKey = "dk1"
 # Logical Asset assetId can be found on EnOS portal (Go to Device Management/Logical Asset under Asset ID)
 # Root Node Asset Id
-LogicalAsset_assetId = "AvxV8hkR"
+LogicalAsset_assetId = "assetId1"
 # Tree Id can be found on the EnOS portal (Go to Asset Trees/<Asset_Tree_Name> under Tree ID)
-Existing_TreeId = "LlrLCZqt"
+Existing_TreeId = "treeId1"
 # These Asset Ids can be found on the EnOS portal (Go to Asset Trees/<Asset_Tree_Name>/<Asset_Name> under Asset ID)
-Node_AssetId = "pqXwiK5U"
-SubNode_AssetId = "LKnsI2hG"
+Node_AssetId = "assetId1"
+SubNode_AssetId = "assetId2"
 
 
 def AssetTreeNodeGeneral(accessKey, secretKey, orgId, url):

@@ -18,7 +18,7 @@
 import poseidon.poseidon
 from requests.models import PreparedRequest
 
-#assetId for Python_Demo_Gateway = zhD6Kpfs
+#assetId for Python_Demo_Gateway = gatway1
 
 def ApplyCertificate_assetId(accessKey, secretKey, orgId, url, assetId, csr):
     accessURL = url + '/connect-service/v2.0/certificates'
