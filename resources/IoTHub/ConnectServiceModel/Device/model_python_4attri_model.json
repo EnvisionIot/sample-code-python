@@ -1,0 +1,184 @@
+{
+  "thingModelId": "python_4attri_model",
+  "ou": "o15520323695671",
+  "thingModelName": {
+    "defaultValue": "python_4attri_model",
+    "i18nValue": {}
+  },
+  "thingModelDesc": "",
+  "thingModelCatagory": "",
+  "thingAttributeMap": {
+    "Attribute_Name": {
+      "minimum": -2147483648,
+      "maximum": 2147483647,
+      "exclusiveMinimum": false,
+      "exclusiveMaximum": false,
+      "hasQuality": false,
+      "required": false,
+      "accessMode": true,
+      "identifier": "Attribute_Name",
+      "name": {
+        "defaultValue": "Attribute_Name",
+        "i18nValue": {}
+      },
+      "desc": "",
+      "i18nDesc": {
+        "defaultValue": "",
+        "i18nValue": {}
+      },
+      "tags": {
+        "tagMap": {}
+      },
+      "createTime": "1642124397844",
+      "priority": 1,
+      "$class": "com.envisioniot.enos.model_service.share.data.tsl.attribute.TSLIntAttribute"
+    }
+  },
+  "thingMeasurepointMap": {
+    "Measurement_Points_Name": {
+      "minimum": -3.4028235E38,
+      "maximum": 3.4028235E38,
+      "exclusiveMinimum": false,
+      "exclusiveMaximum": false,
+      "signalType": "UNKNOWN",
+      "hasQuality": false,
+      "required": false,
+      "accessMode": true,
+      "identifier": "Measurement_Points_Name",
+      "name": {
+        "defaultValue": "Measurement_Points_Name",
+        "i18nValue": {}
+      },
+      "desc": "",
+      "i18nDesc": {
+        "defaultValue": "",
+        "i18nValue": {}
+      },
+      "tags": {
+        "tagMap": {}
+      },
+      "createTime": "1642124424902",
+      "priority": 1,
+      "$class": "com.envisioniot.enos.model_service.share.data.tsl.measurepoint.TSLFloatMeasurepoint"
+    }
+  },
+  "thingServiceMap": {
+    "Service_Name": {
+      "outputData": [
+        {
+          "minimum": -2147483648,
+          "maximum": 2147483647,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "unit": {
+            "unitId": "A/W",
+            "multiplier": "ONE"
+          },
+          "hasQuality": false,
+          "required": false,
+          "accessMode": true,
+          "identifier": "Service_data2",
+          "name": {
+            "defaultValue": "Service_data2",
+            "i18nValue": {}
+          },
+          "desc": "",
+          "i18nDesc": {
+            "i18nValue": {}
+          },
+          "tags": {
+            "tagMap": {}
+          },
+          "createTime": "1642128735746",
+          "priority": 0,
+          "$class": "com.envisioniot.enos.model_service.share.data.tsl.datapoint.TSLInt"
+        }
+      ],
+      "inputData": [
+        {
+          "minimum": -2147483648,
+          "maximum": 2147483647,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "unit": {
+            "unitId": "A/W",
+            "multiplier": "ONE"
+          },
+          "hasQuality": false,
+          "required": false,
+          "accessMode": true,
+          "identifier": "Service_data",
+          "name": {
+            "defaultValue": "Service_data",
+            "i18nValue": {}
+          },
+          "desc": "",
+          "i18nDesc": {
+            "i18nValue": {}
+          },
+          "tags": {
+            "tagMap": {}
+          },
+          "createTime": "1642128735746",
+          "priority": 0,
+          "$class": "com.envisioniot.enos.model_service.share.data.tsl.datapoint.TSLInt"
+        }
+      ],
+      "required": false,
+      "callType": "ASYNC",
+      "identifier": "Service_Name",
+      "name": {
+        "defaultValue": "Service_Name",
+        "i18nValue": {}
+      },
+      "desc": "",
+      "i18nDesc": {
+        "defaultValue": "",
+        "i18nValue": {}
+      },
+      "tags": {
+        "tagMap": {}
+      },
+      "createTime": "1642124440580",
+      "priority": 1
+    }
+  },
+  "thingEventMap": {
+    "Event_Name": {
+      "outputData": [],
+      "type": "INFO",
+      "required": false,
+      "identifier": "Event_Name",
+      "name": {
+        "defaultValue": "Event_Name",
+        "i18nValue": {}
+      },
+      "desc": "",
+      "i18nDesc": {
+        "defaultValue": "",
+        "i18nValue": {}
+      },
+      "tags": {
+        "tagMap": {}
+      },
+      "createTime": "1642124460850",
+      "priority": 1
+    }
+  },
+  "tag": {
+    "tagMap": {}
+  },
+  "allowAdditionalAttribute": false,
+  "allowAdditionalMeasurepoint": true,
+  "inheritedAttributeIds": [],
+  "inheritedMeasurepointIds": [],
+  "inheritedServiceIds": [],
+  "inheritedEventIds": [],
+  "extraInfo": {
+    "createBy": "dylan.yeo",
+    "createTime": "1642124304332",
+    "updateBy": "dylan.yeo",
+    "updateTime": "1642128738740",
+    "ns": "o15520323695671"
+  }
+}
