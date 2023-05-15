@@ -1,0 +1,7 @@
+|Parameter Name|Description|How to get|Note|
+| --- | ---| ---|---|
+|orgId|The organization ID.| In the left navigation bar of the EnOS Management Console, click IAM > Organization Profile. The Organization ID is the orgld.| None| 
+|modelId|The model ID.| In the left navigation bar of the EnOS Management Console, click Asset Tree, select the target asset tree, and search for the device name you want to query. Select the device and click View after the model name in the Basic Information on the right. The Identifier in the basic information for a device is the modelId.| None| 
+|assetId|The asset ID.| In the left navigation bar of the EnOS Management Console, click Asset Tree, select the target asset tree, and search for the device name you want to query. Click the device and the Asset ID in the Basic Information is the assetId.| None| 
+|pointId|The measurement point ID.| In the left navigation bar of the EnOS Management Console, click Asset Tree, select the target asset tree, and search for the device name you want to query. Click the device and the Identifier on the Measurement Points tab is the pointId.| None| 
+|accessKey/secretKey|The service account that EnOS assigns to the application for authentication.| Click Application Registration in the left navigation bar of the EnOS Management Console. Select the application that needs to invoke the API and you can get the Access Key and the Secret Key in the Basic Information.| None|
