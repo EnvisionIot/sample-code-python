@@ -20,6 +20,7 @@ You need to replace the [environment variables](environment_variables.md) with t
 
 This version includes code samples for the following APIs:
 
+- Alert engine service
 - Asset service
 - Asset tree service
 - Batch processing service
